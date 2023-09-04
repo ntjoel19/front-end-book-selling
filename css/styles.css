@@ -1,0 +1,764 @@
+
+/* s applique a tout le programme*/
+*, ::before, ::after{
+	box-sizing: border-box;
+/* paginer tout le document*/	
+     margin: 0;
+     padding: 0;
+}
+
+/* paginer tout le document*/
+.body{
+	max-width: 100%;
+	height: 200vh;
+
+	background-color: #ffffff;
+}
+
+
+/* Entete du document*/
+header img{
+	width: 9%;
+	height: 50px;
+}
+header.header{
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 margin: 5px;
+	 padding-left: 2%;
+	 padding-right: 2%;
+}
+
+.nav a {
+     color: black;
+     text-decoration: none;
+}
+nav.nav ul{
+	 display:flex;
+	 list-style-type:none;
+	 justify-content: space-between;
+}
+.nav ul li:hover{
+	 border-top: #0065fc solid 1px ;
+	 margin-left: 3px;
+}
+.nav ul li:hover a{
+	color: #0065fc; 
+}
+.nav{
+	width: 250px;
+	height: 50px;
+}
+.nav ul{
+	width: 100%;
+	height: 100%;
+}
+.nav ul li{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* Bloc 2*/
+.landing-page{
+	margin: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+h2{
+	font-weight: bolder;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+	color: var(--main-color);
+	padding-bottom: 15px;
+	margin-top: 0;
+	text-align: justify;	
+}
+
+h3 {
+	font-weight: 10;
+	font-size: 15px;
+	line-height: 15px;
+	color: black;
+	margin-bottom: 0;
+	margin: 10px 10px 10px 0;
+}
+
+/* bloc bare de recherche*/
+.Bare-de-recherche{
+	margin: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.bord-icone{
+	background-color:#f2f2f2 ;
+	border: #f2f2f2;
+	margin: 0;
+	width: 15%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.bord-icone i{
+	padding: auto;
+}
+  form {
+	display: flex;
+	vertical-align: middle;
+	border-color: #f2f2f2;
+	border-radius: 20px;
+    width: 29%;
+	height: 50px;
+  }
+  .fa-location-dot{
+   text-align: center;
+  }
+  input {
+    border: 0;
+  }
+  .search {
+	border-bottom: #f2f2f2;
+	border-top: #f2f2f2;
+	border-style: solid;
+	margin-left: 3px;
+	margin: 0;
+    width: 50%;
+	
+  }
+
+  ::placeholder{
+	font-family:Arial, Helvetica, sans-serif;
+	color: black;
+	padding-left: 10px;
+	font-weight: bolder;
+	font-size: 16px;
+  }
+  strong{
+	margin-left: 7px;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+  }
+  .submit {
+    margin: 0;
+    width: 32%;
+    border-color: #0065fc;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+    background-color: #0065fc;
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+  }
+  h1 {
+	font-family: 'Inter', sans-serif;
+	/*font italique ou oblique*/
+	font-style: normal;
+	/*taille  de fonte du text*/
+	font-size: 20px;
+	/*text en gras*/
+	font-weight: bolder;
+	line-height: 15px;
+	color: rgb(7, 7, 7);
+}
+
+/*bloc-fil-eco-famil-rom-anim*/
+.bloc-fil-eco-famil-rom-anim{
+	display: flex;
+	padding: 20px 20px 20px 0;
+     vertical-align: middle;
+     justify-content: space-between;
+	 margin: 5px;
+	 padding-left: 2%;
+	 padding-right: 2%;
+	 width: 85%;
+
+}
+.button {
+	display: flex;
+    align-items: center;
+	width: 60px;
+	height: 40px; 
+	font-size: 18px;
+}
+.tag strong {
+	justify-content: space-between;
+}
+.tag {
+	object-fit: cover;
+	display: flex;
+    align-items: center;
+    border:3px solid #f2f2f2;
+	border-radius: 20px;
+	width:200px;
+	height: 40px;
+	font-size: 18px; 
+}
+.tag i{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    border:3px solid #deebff;  padding: 0; margin: 0;
+	background-color:#deebff ;
+	color: #0065fc;
+	border-radius: 15px;
+	width: 35px;
+	height: 35px;
+	font-size: 20px; 
+}
+
+#location-id{
+
+	display: flex;
+	justify-content: center;
+    align-items: center;	
+}
+
+.logement{
+	display: flex;
+    align-items: center;	
+	padding: 0 20px 20px 0;
+	margin: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.logement i{
+	display: flex;
+	justify-content: center;
+    align-items: center;	 
+	text-align: center;
+    border:3px solid rgb(240, 237, 237);
+	color: #0065fc;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+}
+.nombre-logement{
+	padding-left: 10px;
+}
+
+	/* bloc 6*/
+
+.hebergements{
+	/* mettre les element a la suite des autres*/
+	display: flex;
+	/* mettre les element en dessous des autres*/
+	flex-wrap: wrap;
+	width: 100%;
+	height: 660px;
+	padding: 4px 4px 4px 0;
+	justify-content: space-between;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+/* bloc 6 1*/
+
+.hebergements-marseille button{
+	border-style: none;
+}
+/* bloc 6 1*/
+.hebergements-marseille{
+	background-color: #f2f2f2;
+	width: 60%;
+	padding: 30px;
+	border-radius: 20px;
+}
+.hebergements-marseille a{
+	text-decoration:none;
+}
+.hebergements1{
+	/* mettre les element a la suite des autres*/
+	display: flex;
+	/* mettre les element en dessous des autres*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+.item{
+	background-color:white;
+	/* largeur image*/
+	width: 30%;
+	/* hauteur image*/
+	height: 240px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px #d9d9d9;
+}
+
+.item img{
+	object-fit: cover;
+	/* largeur image*/
+	width: 100%;
+	/* hauteur image*/
+	height: 140px;
+
+}
+.carte{
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 20px;
+
+}
+.carte1{
+	padding-left: 4%;
+    padding: 10px;
+}
+
+
+
+	/* bloc 6 2*/
+	.activites-marseilles{
+		/* mettre les element a la suite des autres*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
+		width: 35%;
+		background-color: #f2f2f2;
+		border-radius: 20px;
+	}
+
+	/*Image 9*/
+	.text-etoile{
+		width: 100%;
+	}
+	.pop-header{
+		display: flex; 
+		padding-top: 10px;
+		justify-content: space-between;  
+
+	}
+.item2{
+	display: flex;
+	background-color:white;
+	height: 160px;
+	padding: 5px;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	box-shadow: 5px 5px 15px #d9d9d9;
+}
+
+.item2 img{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	/* largeur image*/
+	width: 100%;
+	/* hauteur image*/
+	height: 150px;
+
+}
+.item22{
+		width: 45%;
+		/* hauteur image*/
+		height: 150px;
+		overflow: hidden;
+		flex-shrink: 0;
+}
+.item2e{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 60%;
+	padding: 10px 20px 10px 20px;
+}
+
+
+.etoiles-bleu{
+	/*background: red;*/
+	display: inline-block;
+	cursor: pointer;
+	color: #0065fc;
+}
+.etoiles-blanc{
+	/*background: red;*/
+	display: inline-block;
+	cursor: pointer;
+	color:rgb(240, 237, 237);
+}
+
+
+.item h5{
+	padding-left: 4%;
+}
+.etoiles{
+	padding-left: 4%;
+}
+/* bloc*/
+
+.Activites{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-block: 20px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.items{
+	background-color:white;
+	border-radius: 20px;
+	width: 45%;
+	height: 370px; 
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px #d9d9d9;
+	
+}
+.Activites h4{
+	padding-left: 4%;
+}
+.items img{
+	object-fit: cover;
+	width: 100%;
+	height: 330px;
+}
+
+.global1{
+	display: flex;
+	justify-content: space-between;
+	width: 48%;
+}
+.ile{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 47%;
+	
+	
+}
+.items1{
+	background-color:white;
+	border-radius: 20px;
+	height: 190px; 
+	margin-bottom: 10px;
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px rgb(240, 237, 237);
+	
+}
+.items1 img{
+	object-fit: cover;
+	width: 100%;
+	height: 150px;
+}
+.items2{
+	background-color:white;
+	border-radius: 20px;
+	height: 130px; 
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px rgb(240, 237, 237);
+}
+.items2 img{
+	object-fit: cover;
+	width: 100%;
+	height: 90px;
+}
+.items3{
+	background-color:white;
+	border-radius: 20px;
+	height: 150px; 
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px rgb(240, 237, 237);
+}
+.items3 img{
+	object-fit: cover;
+	width: 100%;
+	height: 120px;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	background-color:  #f2f2f2;
+	max-width: 100%;
+	height: 25vh;
+	margin-top: 30px;
+}
+
+.archive{
+	margin-top: 25px;
+	margin-left: 2%;
+	width: 25%;
+}
+.archive div {
+	display: flex;
+	flex-direction: column;
+}
+.archive a {
+	color: black;
+	text-decoration: none;
+}
+/*desktup*/
+
+/*Tablette*/
+@media all and (max-width:998px) {
+	body{width: 692px;}
+
+	form {
+		display: flex;
+		vertical-align: middle;
+		border-color: #f2f2f2;
+		border-radius: 20px;
+		width: 50%;
+		height: 50px;
+	  }
+
+
+	.bloc-fil-eco-famil-rom-anim{
+		display: flex;
+		padding: 20px 20px 20px 0;
+		 vertical-align: middle;
+		 justify-content: space-between;
+		 margin: 5px;
+		 padding-left: 2%;
+		 padding-right: 2%;
+		 width: 100%;
+	
+	}
+	.tag {
+		object-fit: cover;
+		display: flex;
+		align-items: center;
+		border:3px solid #f2f2f2;
+		border-radius: 20px;
+		width:180px;
+		height: 40px;
+		font-size: 18px; 
+	}
+
+
+	.hebergements{
+		/* mettre les element a la suite des autres*/
+		display: flex;
+		/* mettre les element en dessous des autres*/
+		flex-wrap: wrap;
+		width: 100%;
+		height: 690px;
+		padding: 4px 4px 4px 0;
+		justify-content: space-between;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.hebergements-marseille{
+		background-color: #f2f2f2;
+		width: 57%;
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.item{
+		background-color:white;
+		/* largeur image*/
+		width: 48%;
+		/* hauteur image*/
+		height: 180px;
+		margin-bottom: 10px;
+		justify-content: space-between;
+		border-radius: 20px;
+		box-shadow: 5px 5px 15px #d9d9d9;
+	}
+	
+	.item img{
+		object-fit: cover;
+		/* largeur image*/
+		width: 100%;
+		/* hauteur image*/
+		height: 90px;
+	}
+	.carte{
+		overflow: hidden;
+		flex-shrink: 0;
+		border-radius: 20px;
+	}
+	.carte1{
+		padding-left: 4%;
+		padding: 5px;
+	}
+	
+
+
+	.activites-marseilles{
+		/* mettre les element a la suite des autres*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
+		width: 40%;
+		background-color: #f2f2f2;
+		border-radius: 20px;
+	}
+
+	.item2{
+		display: flex;
+		background-color:white;
+		height: 130px;
+		padding: 5px;
+		border-radius: 20px;
+		margin-bottom: 60px;
+		box-shadow: 5px 5px 15px #d9d9d9;
+	}
+	
+	.item2 img{
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		/* largeur image*/
+		width: 100%;
+		/* hauteur image*/
+		height: 120px;
+	
+	}
+	.item22{
+		width: 48%;
+		/* hauteur image*/
+		height: 150px;
+		overflow: hidden;
+		flex-shrink: 0;
+}
+.item2e{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 60%;
+	padding: 5px 1px 5px 1px;
+}
+
+
+.Activites{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-block: 20px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.items{
+	background-color:white;
+	border-radius: 20px;
+	width: 45%;
+	height: 370px; 
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px #d9d9d9;
+	
+}
+.Activites h4{
+	padding-left: 4%;
+}
+.items{
+	height:325px ;
+}
+.items img{
+	object-fit: cover;
+	width: 100%;
+	height: 280px;
+}
+
+.global1{
+	display: flex;
+	justify-content: space-between;
+	width: 48%;
+}
+.ile{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 47%;
+	
+	
+}
+.items1{
+	background-color:white;
+	border-radius: 20px;
+	height: 170px; 
+	margin-bottom: 10px;
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px rgb(240, 237, 237);
+	
+}
+.items1 img{
+	object-fit: cover;
+	width: 100%;
+	height: 130px;
+}
+.items2{
+	background-color:white;
+	border-radius: 20px;
+	height: 120px; 
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px rgb(240, 237, 237);
+}
+.items2 img{
+	object-fit: cover;
+	width: 100%;
+	height: 90px;
+}
+.items3{
+	background-color:white;
+	border-radius: 20px;
+	height: 140px; 
+	overflow: hidden;
+	flex-shrink: 0;
+	box-shadow: 5px 5px 15px rgb(240, 237, 237);
+}
+.items3 img{
+	object-fit: cover;
+	width: 100%;
+	height: 100px;
+}
+	
+	
+}
+/*mobil*/
+@media all and (max-width: 692px){
+	.contener{width: auto; height: auto; padding: 10px;}
+	footer{ height:auto ; width: auto; }
+	.archive{height: auto; width: auto;}
+	.items{height: 250px; width: auto;  }
+	.items1 {height: 250px; width: auto; margin-bottom: 30px;}
+	.items3 {height: 250px; width: auto; }
+	.items2 {height: 250px; width: auto; }
+	.global1 {height: auto; width: auto; display:inline; margin-bottom: 30px;}
+	.Activites {height: auto; width: auto; }
+	.activites-marseilles{height: auto; width: auto; margin-top: 20px;}
+	.text-etoile{height: auto; width: auto;}
+	.pop-header{height: auto; width: auto;}
+	.hebergements1{height: auto; width: auto;}
+	.hebergements{height: auto; width: auto;}
+	.hebergements-marseille{height: auto; width: auto;}
+	.carte img{height: 300px; width: 500px;}
+	.item{height: auto; width: auto;  }
+	.item img{height: 300px; width: 500px;  }
+	.item2{height: auto; width: 500px; }
+	.item22{height: auto; width: auto; }
+	.item2 img{width: 200px; height: 200px;}
+	.bloc-fil-eco-famil-rom-anim span{  font-size: 20px;}
+	.bloc-fil-eco-famil-rom-anim{width: auto; display:inline;}
+	form{width: auto;}
+	header img{width: auto; height: auto; text-align: center;}
+	header div{width: auto;}
+	header .contener{text-align: center;}
+	.ile{width: auto; margin-top: 30px; }
+	.button{margin-right: 20px; margin-top: auto;}
+	.tag{margin-right: 20px;}
+	.items img {width: 500px; height: 200px;}
+	.items1 img{width: 500px; height: 200px;}
+	.items2 img{width: 500px; height: 200px;}
+	.items3 img{width: 500px; height: 200px;}
+
+}
+
